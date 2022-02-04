@@ -119,7 +119,7 @@ main {
     background-repeat: no-repeat;
     background-clip: border-box;
   }
-  .index-mission {
+  .index-game-content {
     background-image: url("./img/walpaperlight-ConvertImage.jpg");
     background-size: cover;
     background-position: center;
@@ -156,6 +156,8 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+
     img {
       width: 160px;
       height: 140px;
@@ -187,7 +189,7 @@ footer {
   }
   .footer-device {
     img {
-      padding: 15px 3px 0px 3px;
+      padding: 15px 8px 0px 8px;
       width: 64px;
       height: auto;
     }

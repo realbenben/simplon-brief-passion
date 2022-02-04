@@ -138,35 +138,36 @@ main .index-title {
   background-repeat: no-repeat;
   background-clip: border-box;
 }
-main .index-mission {
+main .index-game-content {
   background-image: url("./img/walpaperlight-ConvertImage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-main .index-mission li {
+main .index-game-content li {
   padding-bottom: 8px;
   padding-bottom: 8px;
 }
-main .index-mission li strong {
+main .index-game-content li strong {
   font-size: 24px;
   color: #193498;
 }
-main .index-mission .index-openWorld h2 {
+main .index-game-content .index-openWorld h2 {
   color: white;
 }
-main .index-mission .index-openWorld ul li a {
+main .index-game-content .index-openWorld ul li a {
   text-decoration: none;
   color: #193498;
   text-align: center;
 }
-main .index-mission .index-openWorld ul li a:hover {
+main .index-game-content .index-openWorld ul li a:hover {
   color: #ffc900;
 }
 main .planet {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 main .planet img {
   width: 160px;
@@ -194,7 +195,7 @@ footer h3 {
   color: #193498;
 }
 footer .footer-device img {
-  padding: 15px 3px 0px 3px;
+  padding: 15px 8px 0px 8px;
   width: 64px;
   height: auto;
 }
