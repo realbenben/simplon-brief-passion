@@ -1,17 +1,58 @@
-li {
-  list-style: none;
+h1 {
+  font-family: "Lato", sans-serif;
+  color: #193498;
+  font-weight: bolder;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: anim2;
+          animation-name: anim2;
 }
 
-a {
-  text-decoration: none;
+@-webkit-keyframes anim2 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    transform: scale(1.15);
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    transform: scale(1.15);
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+li {
+  list-style: none;
+  font-family: "Supermercado One", cursive;
+}
+
+a:hover {
+  color: #ffc900;
 }
 
 body {
   text-align: center;
 }
+body p,
+body a {
+  font-family: "Supermercado One", cursive;
+  font-size: 22px;
+}
 
 nav {
-  background-color: blue;
+  background-color: #bbbfca;
+  padding-top: 5px;
+  padding-bottom: 2px;
 }
 nav ul {
   padding-left: 30%;
@@ -25,6 +66,119 @@ nav ul img {
 }
 nav ul li {
   font-size: 32px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #2666cf;
+}
+
+main p,
+main li {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+main h2,
+main h3 {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: anim1;
+          animation-name: anim1;
+  font-family: "Lato", sans-serif;
+  color: #193498;
+  font-weight: bolder;
+  padding-top: 5%;
+}
+@-webkit-keyframes anim1 {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    transform: scale(1.55);
+    margin-right: 0%;
+    width: 100%;
+    -webkit-transform: scale(1.55);
+    -moz-transform: scale(1.55);
+    -ms-transform: scale(1.55);
+    -o-transform: scale(1.55);
+  }
+}
+@keyframes anim1 {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    transform: scale(1.55);
+    margin-right: 0%;
+    width: 100%;
+    -webkit-transform: scale(1.55);
+    -moz-transform: scale(1.55);
+    -ms-transform: scale(1.55);
+    -o-transform: scale(1.55);
+  }
+}
+main .index-title {
+  background-image: url("./img/Warframe-Logo-opacity1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+}
+main .index-mission {
+  background-image: url("./img/walpaperlight-ConvertImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main .index-mission li {
+  padding-bottom: 8px;
+  padding-bottom: 8px;
+}
+main .index-mission li strong {
+  font-size: 24px;
+  color: #193498;
+}
+main .index-mission .index-openWorld h2 {
+  color: white;
+}
+main .index-mission .index-openWorld ul li a {
+  text-decoration: none;
+  color: #193498;
+  text-align: center;
+}
+main .planet {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .planet img {
+  width: 160px;
+  height: 140px;
+  padding: 5px;
+}
+
+footer {
+  background-image: url(./img/loki-ConvertImage1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+}
+footer img {
+  width: 32px;
+  height: auto;
+}
+footer h3 {
+  font-family: "Lato", sans-serif;
+  color: #193498;
+}
+footer .footer-device img {
+  padding: 5px 3px 0px 3px;
 }/*# sourceMappingURL=index.css.map */
