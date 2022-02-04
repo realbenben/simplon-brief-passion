@@ -46,9 +46,11 @@ body a {
 }
 
 nav {
-  background-color: #bbbfca;
+  background-color: #bdbdd7;
   padding-top: 5px;
   padding-bottom: 2px;
+  margin-top: 0%;
+  margin-bottom: 5%;
 }
 nav ul {
   padding-left: 30%;
@@ -180,7 +182,7 @@ footer {
   background-clip: border-box;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: baseline;
   justify-content: space-around;
 }
 footer img {
@@ -193,6 +195,8 @@ footer h3 {
 }
 footer .footer-device img {
   padding: 15px 3px 0px 3px;
+  width: 64px;
+  height: auto;
 }
 footer .footer-stream li {
   padding-top: 10px;
@@ -204,4 +208,25 @@ footer .footer-stream li a {
 }
 footer .footer-stream li a:hover {
   color: #ffc900;
+}
+footer .footer-contact .footer-title .footer-title-logo {
+  width: 94px;
+  height: auto;
+}
+footer .footer-contact .footer-title img {
+  width: 64px;
+  height: auto;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+footer .footer-contact ul {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .footer-contact ul li {
+  padding-left: 18px;
+  padding-right: 18px;
+  scale: 2;
 }/*# sourceMappingURL=index.css.map */

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="contact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +17,7 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <title>Les warframes du jeu</title>
+    <title>Me contacter</title>
   </head>
   <body>
     <header>
@@ -32,7 +32,43 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1></h1>
+      <form action="https://formspree.io/mdowjnre" method="POST">
+        <div class="">
+          <label for="name_field">Your name</label>
+          <input
+            type="text"
+            id="name_field"
+            name="name_field"
+            required
+            placeholder="link"
+          />
+        </div>
+        <div class="nes-field">
+          <label for="_replyto">Your email</label>
+          <input
+            type="email"
+            id="_replyto"
+            name="_replyto"
+            required
+            placeholder="link@triforce.com"
+          />
+        </div>
+        <div class="">
+          <label for="textarea_message">Your message</label>
+          <textarea
+            id="textarea_message"
+            name="textarea_message"
+            class="nes-textarea"
+            placeholder="hey ! Listen !"
+          ></textarea>
+        </div>
+        <div class="nes-field">
+          <button type="submit" class="nes-btn is-primary">send message</button>
+        </div>
+      </form>
+    </main>
     <footer>
       <div class="footer-device">
         <h3>le jeu est disponible sur :</h3>
