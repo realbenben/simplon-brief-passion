@@ -1,0 +1,378 @@
+li {
+  list-style: none;
+  font-family: "Supermercado One", cursive;
+}
+
+body {
+  text-align: center;
+}
+body p,
+body a {
+  font-family: "Supermercado One", cursive;
+  font-size: 22px;
+}
+
+nav {
+  background-color: #bbbfca;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+nav ul {
+  padding-left: 30%;
+  display: flex;
+  flex-direction: row;
+}
+nav ul img {
+  height: 60px;
+  width: auto;
+  margin-top: -23px;
+}
+nav ul li {
+  font-size: 32px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #2666cf;
+}
+
+h2,
+h3 {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: anim1;
+          animation-name: anim1;
+  font-family: "Lato", sans-serif;
+  color: #193498;
+  font-weight: bolder;
+  padding-top: 5%;
+}
+@-webkit-keyframes anim1 {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    transform: scale(1.55);
+    margin-right: 0%;
+    width: 100%;
+    -webkit-transform: scale(1.55);
+    -moz-transform: scale(1.55);
+    -ms-transform: scale(1.55);
+    -o-transform: scale(1.55);
+  }
+}
+@keyframes anim1 {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    transform: scale(1.55);
+    margin-right: 0%;
+    width: 100%;
+    -webkit-transform: scale(1.55);
+    -moz-transform: scale(1.55);
+    -ms-transform: scale(1.55);
+    -o-transform: scale(1.55);
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+}
+
+img {
+  height: 350px;
+  width: 400;
+}
+
+.warframe-title {
+  background: linear-gradient(149deg, #2666cf 20%, #395b64 80%);
+  padding: 5%;
+  color: #d5d5d5;
+}
+
+h2 {
+  background-color: #000;
+  padding: 5%;
+  margin: auto;
+}
+
+.warframes-codex {
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5%;
+}
+.warframes-codex div {
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.warframes-codex div img {
+  height: 350px;
+  width: auto;
+}
+.warframes-codex div span {
+  padding-top: 5%;
+  font-family: "Supermercado One", cursive;
+  font-size: 22px;
+  margin: auto;
+  color: #d5d5d5;
+}
+
+.slider-container {
+  background: linear-gradient(149deg, #2666cf 20%, #395b64 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 3%;
+}
+
+.slider {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+.slide:nth-of-type(even) {
+  background-color: #faf6d4;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  scroll-snap-align: center;
+  margin-right: 0px;
+  box-sizing: border-box;
+  background: white;
+  transform-origin: center center;
+  transform: scale(1);
+}
+
+.slide__text {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.slide a {
+  background: none;
+  border: none;
+}
+
+a.slide__prev,
+.slider::before {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 5%;
+}
+
+a.slide__next,
+.slider::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 5%;
+}
+
+.slider::before,
+.slider::after,
+.slide__prev,
+.slide__next {
+  position: absolute;
+  top: 48%;
+  width: 35px;
+  height: 35px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  z-index: 1;
+  background: none;
+  pointer-events: none;
+}
+
+.slider__nav {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+.slider__navlink {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 10px 0 10px;
+}
+
+.read-article {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  color: #000;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: arial;
+  text-decoration: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 0 100px -20px, rgba(0, 0, 0, 0.3) 0 0 60px -15px;
+}
+
+.read-article:hover {
+  background: #d5d5d5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 0 100px -20px, rgba(0, 0, 0, 0.3) 0 0 60px 0px;
+}
+
+iframe[sandbox] .read-article {
+  display: none;
+}
+
+footer {
+  background-image: url(../img/loki-ConvertImage1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+}
+footer img {
+  width: 32px;
+  height: auto;
+}
+footer h3 {
+  font-family: "Lato", sans-serif;
+  color: #193498;
+}
+footer .footer-device img {
+  padding: 15px 3px 0px 3px;
+  width: 64px;
+  height: auto;
+}
+footer .footer-stream li {
+  padding-top: 10px;
+}
+footer .footer-stream li a {
+  text-decoration: none;
+  color: #193498;
+  text-align: center;
+}
+footer .footer-stream li a:hover {
+  color: #ffc900;
+}
+footer .footer-contact .footer-title img {
+  width: 64px;
+  height: auto;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+footer .footer-contact ul {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .footer-contact ul li {
+  padding-left: 18px;
+  padding-right: 18px;
+  scale: 2;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  body button {
+    display: block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/ur_pin_large_front_square_600x600-removebg-preview-modified.png");
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+  }
+  body nav {
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  body nav ul {
+    padding-left: 1%;
+    display: flex;
+    flex-direction: row;
+  }
+  body nav ul img {
+    height: 60px;
+    width: auto;
+    margin-top: -23px;
+  }
+  body nav ul li {
+    font-size: 22px;
+    padding-left: 15px;
+    padding-right: 5px;
+    color: #bdbdd7;
+  }
+  body nav ul li a {
+    text-decoration: none;
+    color: #2666cf;
+  }
+
+  footer {
+    background-image: url(../img/loki-ConvertImage1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=warframe.css.map */

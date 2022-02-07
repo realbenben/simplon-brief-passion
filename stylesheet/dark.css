@@ -38,9 +38,11 @@ li {
 
 body {
   text-align: center;
+  background-color: black;
 }
 body p,
 body a {
+  color: white;
   font-family: "Supermercado One", cursive;
   font-size: 22px;
 }
@@ -79,7 +81,7 @@ main button {
   border-radius: 50%;
   height: 250px;
   width: 250px;
-  background-image: url("img/ur_pin_large_front_square_600x600-removebg-preview-modified.png");
+  background-image: url("../img/ur_pin_large_front_square_600x600-removebg-preview.png");
   background-size: 130%;
   background-position: center;
   background-repeat: no-repeat;
@@ -132,14 +134,14 @@ main h3 {
   }
 }
 main .index-title {
-  background-image: url("./img/Warframe-Logo-opacity1.png");
+  background-image: url("../img/the_warframe_logo_by_leroyjenkins234_ddl7d2g-fullview.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-clip: border-box;
 }
 main .index-game-content {
-  background-image: url("./img/walpaperlight-ConvertImage.jpg");
+  background-image: url("../img/background1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -164,6 +166,7 @@ main .index-game-content .index-openWorld ul li a:hover {
   color: #ffc900;
 }
 main .planet {
+  color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -176,7 +179,7 @@ main .planet img {
 }
 
 footer {
-  background-image: url(./img/loki-ConvertImage1.png);
+  background-image: url(../img/loki-ConvertImage1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -230,4 +233,60 @@ footer .footer-contact ul li {
   padding-left: 18px;
   padding-right: 18px;
   scale: 2;
-}/*# sourceMappingURL=index.css.map */
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  body button {
+    display: block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/ur_pin_large_front_square_600x600-removebg-preview-modified.png");
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+  }
+  body nav {
+    background-color: #bdbdd7;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  body nav ul {
+    padding-left: 1%;
+    display: flex;
+    flex-direction: row;
+  }
+  body nav ul img {
+    height: 60px;
+    width: auto;
+    margin-top: -23px;
+  }
+  body nav ul li {
+    font-size: 22px;
+    padding-left: 15px;
+    padding-right: 5px;
+    color: #bdbdd7;
+  }
+  body nav ul li a {
+    text-decoration: none;
+    color: #2666cf;
+  }
+  body footer {
+    background-image: url(../img/loki-ConvertImage1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=dark.css.map */

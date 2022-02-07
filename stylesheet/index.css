@@ -37,7 +37,6 @@ li {
 }
 
 body {
-  background-color: black;
   text-align: center;
 }
 body p,
@@ -47,9 +46,11 @@ body a {
 }
 
 nav {
-  background-color: #bbbfca;
+  background-color: #bdbdd7;
   padding-top: 5px;
   padding-bottom: 2px;
+  margin-top: 0%;
+  margin-bottom: 5%;
 }
 nav ul {
   padding-left: 30%;
@@ -78,7 +79,7 @@ main button {
   border-radius: 50%;
   height: 250px;
   width: 250px;
-  background-image: url("img/ur_pin_large_front_square_600x600-removebg-preview-modified.png");
+  background-image: url("../img/ur_pin_large_front_square_600x600-removebg-preview-modified.png");
   background-size: 130%;
   background-position: center;
   background-repeat: no-repeat;
@@ -131,41 +132,42 @@ main h3 {
   }
 }
 main .index-title {
-  background-image: url("./img/Warframe-Logo-opacity1.png");
+  background-image: url("../img/Warframe-Logo-opacity1.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-clip: border-box;
 }
-main .index-mission {
-  background-image: url("./img/walpaperlight-ConvertImage.jpg");
+main .index-game-content {
+  background-image: url("../img/walpaperlight-ConvertImage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-main .index-mission li {
+main .index-game-content li {
   padding-bottom: 8px;
   padding-bottom: 8px;
 }
-main .index-mission li strong {
+main .index-game-content li strong {
   font-size: 24px;
   color: #193498;
 }
-main .index-mission .index-openWorld h2 {
+main .index-game-content .index-openWorld h2 {
   color: white;
 }
-main .index-mission .index-openWorld ul li a {
+main .index-game-content .index-openWorld ul li a {
   text-decoration: none;
   color: #193498;
   text-align: center;
 }
-main .index-mission .index-openWorld ul li a:hover {
+main .index-game-content .index-openWorld ul li a:hover {
   color: #ffc900;
 }
 main .planet {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 main .planet img {
   width: 160px;
@@ -174,7 +176,7 @@ main .planet img {
 }
 
 footer {
-  background-image: url(./img/loki-ConvertImage1.png);
+  background-image: url(../img/loki-ConvertImage1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -193,7 +195,7 @@ footer h3 {
   color: #193498;
 }
 footer .footer-device img {
-  padding: 15px 3px 0px 3px;
+  padding: 15px 8px 0px 8px;
   width: 64px;
   height: auto;
 }
@@ -207,6 +209,10 @@ footer .footer-stream li a {
 }
 footer .footer-stream li a:hover {
   color: #ffc900;
+}
+footer .footer-contact .footer-title .footer-title-logo {
+  width: 94px;
+  height: auto;
 }
 footer .footer-contact .footer-title img {
   width: 64px;
@@ -224,4 +230,61 @@ footer .footer-contact ul li {
   padding-left: 18px;
   padding-right: 18px;
   scale: 2;
-}/*# sourceMappingURL=dark.css.map */
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  body button {
+    display: block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/ur_pin_large_front_square_600x600-removebg-preview-modified.png");
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+  }
+  body nav {
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  body nav ul {
+    padding-left: 1%;
+    display: flex;
+    flex-direction: row;
+  }
+  body nav ul img {
+    height: 60px;
+    width: auto;
+    margin-top: -23px;
+  }
+  body nav ul li {
+    font-size: 22px;
+    padding-left: 15px;
+    padding-right: 5px;
+    color: #bdbdd7;
+  }
+  body nav ul li a {
+    text-decoration: none;
+    color: #2666cf;
+  }
+
+  footer {
+    background-image: url(../img/loki-ConvertImage1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=index.css.map */
