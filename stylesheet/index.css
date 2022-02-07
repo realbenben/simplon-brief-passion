@@ -159,8 +159,7 @@ main .index-game-content {
   background-repeat: no-repeat;
 }
 main .index-game-content li {
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
   padding-bottom: 8px;
   padding-bottom: 8px;
 }
