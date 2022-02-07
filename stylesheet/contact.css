@@ -141,7 +141,7 @@ body {
 
 form {
   padding-top: 1%;
-  margin: auto;
+  margin: 10% auto auto auto;
   height: 600px;
   width: 800px;
   background-image: url("../img/st,small,507x507-pad,600x600,f8f8f8.jpg");

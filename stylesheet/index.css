@@ -46,9 +46,13 @@ body a {
 }
 
 nav {
-  background-color: #bdbdd7;
-  padding-top: 5px;
-  padding-bottom: 2px;
+  background-image: url("../img/slider/header.png");
+  background-size: cover;
+  background-position: right 35% top 30%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 0%;
   margin-bottom: 5%;
 }
@@ -63,6 +67,7 @@ nav ul img {
   margin-top: -23px;
 }
 nav ul li {
+  opacity: 200%;
   font-size: 32px;
   padding-left: 15px;
   padding-right: 15px;
@@ -274,6 +279,11 @@ footer .footer-contact ul li {
   body nav ul li a {
     text-decoration: none;
     color: #2666cf;
+  }
+
+  .planet {
+    display: flex;
+    flex-direction: column;
   }
 
   footer {
