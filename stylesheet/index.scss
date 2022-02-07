@@ -10,6 +10,13 @@ h1 {
   font-weight: bolder;
   animation-duration: 5s;
   animation-name: anim2;
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
 }
 @keyframes anim2 {
   from {
@@ -133,6 +140,7 @@ main {
     background-repeat: no-repeat;
 
     li {
+      text-align-last: left;
       padding-bottom: 8px;
       padding-bottom: 8px;
       strong {

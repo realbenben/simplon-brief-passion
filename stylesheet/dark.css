@@ -1,11 +1,20 @@
 h1 {
   font-family: "Lato", sans-serif;
-  color: #193498;
+  color: white;
   font-weight: bolder;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-name: anim2;
           animation-name: anim2;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
 }
 
 @-webkit-keyframes anim2 {
@@ -48,9 +57,13 @@ body a {
 }
 
 nav {
-  background-color: #bdbdd7;
-  padding-top: 5px;
-  padding-bottom: 2px;
+  background-image: url("../img/slider/blackheader.jpg");
+  background-size: cover;
+  background-position: right 35% top 30%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 0%;
   margin-bottom: 5%;
 }
@@ -71,7 +84,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #2666cf;
+  color: white;
 }
 
 main button {
@@ -147,6 +160,9 @@ main .index-game-content {
   background-repeat: no-repeat;
 }
 main .index-game-content li {
+  -moz-text-align-last: left;
+       text-align-last: left;
+  color: aliceblue;
   padding-bottom: 8px;
   padding-bottom: 8px;
 }
@@ -159,7 +175,7 @@ main .index-game-content .index-openWorld h2 {
 }
 main .index-game-content .index-openWorld ul li a {
   text-decoration: none;
-  color: #193498;
+  color: white;
   text-align: center;
 }
 main .index-game-content .index-openWorld ul li a:hover {

@@ -3,6 +3,25 @@ li {
   font-family: "Supermercado One", cursive;
 }
 
+h1 {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-weight: bolder;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: anim2;
+          animation-name: anim2;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
 body {
   text-align: center;
 }
@@ -18,9 +37,15 @@ body input {
 }
 
 nav {
-  background-color: #bbbfca;
-  padding-top: 5px;
-  padding-bottom: 2px;
+  background-image: url("../img/slider/header.png");
+  background-size: cover;
+  background-position: right 35% top 30%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0%;
+  margin-bottom: 5%;
 }
 nav ul {
   padding-left: 30%;

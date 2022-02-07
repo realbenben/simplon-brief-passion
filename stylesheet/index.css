@@ -6,6 +6,15 @@ h1 {
           animation-duration: 5s;
   -webkit-animation-name: anim2;
           animation-name: anim2;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
 }
 
 @-webkit-keyframes anim2 {
@@ -150,6 +159,8 @@ main .index-game-content {
   background-repeat: no-repeat;
 }
 main .index-game-content li {
+  -moz-text-align-last: left;
+       text-align-last: left;
   padding-bottom: 8px;
   padding-bottom: 8px;
 }
