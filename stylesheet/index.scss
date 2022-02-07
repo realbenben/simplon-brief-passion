@@ -1,312 +1,341 @@
 // css de la page index //
-
 // INITIALISATION DES FONTS
-
 // LES RECURRENCES  ET ANIMATION//
-
 h1 {
-  font-family: "Lato", sans-serif;
-  color: #193498;
-  font-weight: bolder;
-  animation-duration: 5s;
-  animation-name: anim2;
-  font-size: 48px;
+    font-family: "Lato", sans-serif;
+    color: #193498;
+    font-weight: bolder;
+    animation-duration: 5s;
+    animation-name: anim2;
+    font-size: 48px;
 }
-h2 {
-  font-size: 36px;
-}
-h3 {
-  font-size: 28px;
-}
-@keyframes anim2 {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
 
-  to {
-    transform: scale(1.15);
-    margin-left: 0%;
-    width: 100%;
-  }
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+@keyframes anim2 {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        transform: scale(1.15);
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
 li {
-  list-style: none;
-  font-family: "Supermercado One", cursive;
+    list-style: none;
+    font-family: "Supermercado One", cursive;
 }
 
 body {
-  text-align: center;
-  p,
-  a {
-    font-family: "Supermercado One", cursive;
-    font-size: 22px;
-  }
+    text-align: center;
+    p,
+    a {
+        font-family: "Supermercado One", cursive;
+        font-size: 22px;
+    }
 }
 
 // LE HEADER //
 nav {
-  // background-color: #bdbdd7;
-  background-image: url("../img/slider/header.png");
-  background-size: cover;
-  background-position: right 35% top 30%;
-  background-repeat: no-repeat;
-  background-origin: content-box;
-
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 0%;
-  margin-bottom: 5%;
-
-  ul {
-    padding-left: 30%;
-    display: flex;
-    flex-direction: row;
-    img {
-      height: 60px;
-      width: auto;
-      margin-top: -23px;
+    // background-color: #bdbdd7;
+    background-image: url("../img/slider/header.png");
+    background-size: cover;
+    background-position: right 35% top 30%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    ul {
+        padding-left: 30%;
+        display: flex;
+        flex-direction: row;
+        img {
+            height: 60px;
+            width: auto;
+            margin-top: -23px;
+        }
+        li {
+            opacity: 200%;
+            padding-left: 15px;
+            padding-right: 15px;
+            a {
+                font-size: 32px;
+                text-decoration: none;
+                color: #2666cf;
+            }
+        }
     }
-    li {
-      opacity: 200%;
-      font-size: 32px;
-      padding-left: 15px;
-      padding-right: 15px;
-      a {
-        text-decoration: none;
-        color: #2666cf;
-      }
-    }
-  }
 }
 
 // LE MAIN DU TEMPLATE //
 main {
-  button {
-    position: absolute;
-    right: 10%;
-    margin-top: 2%;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    background-image: url("../img/ur_pin_large_front_square_600x600-removebg-preview-modified.png");
-    background-size: 130%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-  }
-  p,
-  li {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  h2,
-  h3 {
-    animation-duration: 5s;
-    animation-name: anim1;
-    font-family: "Lato", sans-serif;
-    color: #193498;
-    font-weight: bolder;
-    padding-top: 5%;
-    @keyframes anim1 {
-      from {
-        margin-right: 100%;
-        width: 300%;
-      }
-
-      to {
-        transform: scale(1.55);
-        margin-right: 0%;
-        width: 100%;
-        -webkit-transform: scale(1.55);
-        -moz-transform: scale(1.55);
-        -ms-transform: scale(1.55);
-        -o-transform: scale(1.55);
-      }
-    }
-  }
-  .index-title {
-    background-image: url("../img/Warframe-Logo-opacity1.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-  }
-  .index-game-content {
-    background-image: url("../img/walpaperlight-ConvertImage.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    li {
-      text-align: left;
-      padding-bottom: 8px;
-      padding-bottom: 8px;
-      strong {
-        font-size: 24px;
-        color: #193498;
-      }
-    }
-    .index-openWorld {
-      h2 {
-        color: white;
-      }
-
-      ul {
-        li {
-          a {
-            text-decoration: none;
-            color: #193498;
-            text-align: center;
-          }
-          a:hover {
-            color: #ffc900;
-          }
-        }
-      }
-    }
-  }
-  .planet {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    img {
-      width: 160px;
-      height: 140px;
-      padding: 5px;
-    }
-  }
-}
-// FOOTER //
-
-footer {
-  background-image: url(../img/loki-ConvertImage1.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-clip: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-around;
-
-  img {
-    width: 32px;
-    height: auto;
-  }
-
-  h3 {
-    font-family: "Lato", sans-serif;
-    color: #193498;
-  }
-  .footer-device {
-    img {
-      padding: 15px 8px 0px 8px;
-      width: 64px;
-      height: auto;
-    }
-  }
-  .footer-stream {
-    li {
-      padding-top: 10px;
-      a {
-        text-decoration: none;
-        color: #193498;
-        text-align: center;
-      }
-      a:hover {
-        color: #ffc900;
-      }
-    }
-  }
-  .footer-contact {
-    .footer-title {
-      .footer-title-logo {
-        width: 94px;
-        height: auto;
-      }
-      img {
-        width: 64px;
-        height: auto;
-        padding-left: 4px;
-        padding-right: 4px;
-      }
-    }
-
-    ul {
-      padding-top: 10%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      li {
-        padding-left: 18px;
-        padding-right: 18px;
-        scale: 2;
-      }
-    }
-  }
-}
-@media screen and (max-width: 600px) {
-  body {
-    display: flex;
-    flex-direction: column;
     button {
-      display: block;
-
-      border-radius: 50%;
-      height: 50px;
-      width: 50px;
-      background-image: url("../img/ur_pin_large_front_square_600x600-removebg-preview-modified.png");
-      background-size: 130%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-origin: border-box;
+        position: absolute;
+        right: 10%;
+        margin-top: 2%;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        background-image: url("../img/ur_pin_large_front_square_600x600-removebg-preview-modified.png");
+        background-size: 130%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: border-box;
     }
-    nav {
-      background-color: white;
-      padding-top: 5px;
-      padding-bottom: 2px;
-      margin-top: 0%;
-      margin-bottom: 0%;
-
-      ul {
-        padding-left: 1%;
+    p,
+    li {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    h2,
+    h3 {
+        animation-duration: 5s;
+        animation-name: anim1;
+        font-family: "Lato", sans-serif;
+        color: #193498;
+        font-weight: bolder;
+        padding-top: 5%;
+        @keyframes anim1 {
+            from {
+                margin-right: 100%;
+                width: 300%;
+            }
+            to {
+                transform: scale(1.55);
+                margin-right: 0%;
+                width: 100%;
+                -webkit-transform: scale(1.55);
+                -moz-transform: scale(1.55);
+                -ms-transform: scale(1.55);
+                -o-transform: scale(1.55);
+            }
+        }
+    }
+    .index-title {
+        background-image: url("../img/Warframe-Logo-opacity1.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+    }
+    .index-game-content {
+        background-image: url("../img/walpaperlight-ConvertImage.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        li {
+            text-align: left;
+            padding-bottom: 8px;
+            padding-bottom: 8px;
+            strong {
+                font-size: 24px;
+                color: #193498;
+            }
+        }
+        .index-openWorld {
+            h2 {
+                color: white;
+            }
+            ul {
+                padding: 20px 0px 20px 0px;
+                li {
+                    text-align: center;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        text-align: center;
+                        font-size: 32px;
+                    }
+                    a:hover {
+                        color: #ffc900;
+                    }
+                }
+            }
+        }
+    }
+    .planet {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
         img {
-          height: 60px;
-          width: auto;
-          margin-top: -23px;
+            width: 160px;
+            height: 140px;
+            padding: 5px;
         }
-        li {
-          font-size: 22px;
-          padding-left: 15px;
-          padding-right: 5px;
-          color: #bdbdd7;
-          a {
-            text-decoration: none;
-            color: #2666cf;
-          }
+        .img-overlay {
+            position: relative;
+            width: 25%;
         }
-      }
+        .img-overlay-image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 50%;
+            margin-left: 25%;
+            opacity: 0;
+            transition: 0.5s ease;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 100%;
+        }
+        .img-overlay:hover .overlay {
+            opacity: 1;
+        }
+        .text {
+            color: white;
+            font-size: 30px;
+            font-family: "Supermercado One", cursive;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
     }
-  }
-  .planet {
-    display: flex;
-    flex-direction: column;
-  }
-  footer {
+}
+
+// FOOTER //
+footer {
     background-image: url(../img/loki-ConvertImage1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-clip: border-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: baseline;
     justify-content: space-around;
-  }
+    img {
+        width: 32px;
+        height: auto;
+    }
+    h3 {
+        font-family: "Lato", sans-serif;
+        color: #193498;
+    }
+    .footer-device {
+        img {
+            padding: 15px 8px 0px 8px;
+            width: 64px;
+            height: auto;
+        }
+    }
+    .footer-stream {
+        li {
+            padding-top: 10px;
+            a {
+                text-decoration: none;
+                color: #193498;
+                text-align: center;
+            }
+            a:hover {
+                color: #ffc900;
+            }
+        }
+    }
+    .footer-contact {
+        .footer-title {
+            .footer-title-logo {
+                width: 94px;
+                height: auto;
+            }
+            img {
+                width: 64px;
+                height: auto;
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+        }
+        ul {
+            padding-top: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li {
+                padding-left: 18px;
+                padding-right: 18px;
+                scale: 2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        button {
+            display: block;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            background-image: url("../img/ur_pin_large_front_square_600x600-removebg-preview-modified.png");
+            background-size: 130%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+        nav {
+            background-color: white;
+            padding-top: 5px;
+            padding-bottom: 2px;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            ul {
+                padding-left: 1%;
+                display: flex;
+                flex-direction: row;
+                img {
+                    height: 60px;
+                    width: auto;
+                    margin-top: -23px;
+                }
+                li {
+                    padding-left: 15px;
+                    padding-right: 5px;
+                    color: #bdbdd7;
+                    a {
+                        font-size: 22px;
+                        text-decoration: none;
+                        color: #ffc900;
+                    }
+                }
+            }
+        }
+    }
+    .planet {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        background-image: url(../img/loki-ConvertImage1.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
 }

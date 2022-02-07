@@ -23,7 +23,8 @@ h3 {
     width: 300%;
   }
   to {
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
     margin-left: 0%;
     width: 100%;
   }
@@ -35,11 +36,13 @@ h3 {
     width: 300%;
   }
   to {
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
     margin-left: 0%;
     width: 100%;
   }
 }
+
 li {
   list-style: none;
   font-family: "Supermercado One", cursive;
@@ -48,6 +51,7 @@ li {
 body {
   text-align: center;
 }
+
 body p,
 body a {
   font-family: "Supermercado One", cursive;
@@ -65,23 +69,32 @@ nav {
   margin-top: 0%;
   margin-bottom: 5%;
 }
+
 nav ul {
   padding-left: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 nav ul img {
   height: 60px;
   width: auto;
   margin-top: -23px;
 }
+
 nav ul li {
   opacity: 200%;
-  font-size: 32px;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 nav ul li a {
+  font-size: 32px;
   text-decoration: none;
   color: #2666cf;
 }
@@ -99,11 +112,13 @@ main button {
   background-repeat: no-repeat;
   background-origin: border-box;
 }
+
 main p,
 main li {
   margin-left: 10%;
   margin-right: 10%;
 }
+
 main h2,
 main h3 {
   -webkit-animation-duration: 5s;
@@ -115,6 +130,7 @@ main h3 {
   font-weight: bolder;
   padding-top: 5%;
 }
+
 @-webkit-keyframes anim1 {
   from {
     margin-right: 100%;
@@ -130,6 +146,7 @@ main h3 {
     -o-transform: scale(1.55);
   }
 }
+
 @keyframes anim1 {
   from {
     margin-right: 100%;
@@ -145,6 +162,7 @@ main h3 {
     -o-transform: scale(1.55);
   }
 }
+
 main .index-title {
   background-image: url("../img/Warframe-Logo-opacity1.png");
   background-size: contain;
@@ -152,42 +170,110 @@ main .index-title {
   background-repeat: no-repeat;
   background-clip: border-box;
 }
+
 main .index-game-content {
   background-image: url("../img/walpaperlight-ConvertImage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 main .index-game-content li {
   text-align: left;
   padding-bottom: 8px;
   padding-bottom: 8px;
 }
+
 main .index-game-content li strong {
   font-size: 24px;
   color: #193498;
 }
+
 main .index-game-content .index-openWorld h2 {
   color: white;
 }
-main .index-game-content .index-openWorld ul li a {
-  text-decoration: none;
-  color: #193498;
+
+main .index-game-content .index-openWorld ul {
+  padding: 20px 0px 20px 0px;
+}
+
+main .index-game-content .index-openWorld ul li {
   text-align: center;
 }
+
+main .index-game-content .index-openWorld ul li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+}
+
 main .index-game-content .index-openWorld ul li a:hover {
   color: #ffc900;
 }
+
 main .planet {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 main .planet img {
   width: 160px;
   height: 140px;
   padding: 5px;
+}
+
+main .planet .img-overlay {
+  position: relative;
+  width: 25%;
+}
+
+main .planet .img-overlay-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main .planet .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  margin-left: 25%;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+}
+
+main .planet .img-overlay:hover .overlay {
+  opacity: 1;
+}
+
+main .planet .text {
+  color: white;
+  font-size: 30px;
+  font-family: "Supermercado One", cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 footer {
@@ -196,51 +282,75 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-clip: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 footer img {
   width: 32px;
   height: auto;
 }
+
 footer h3 {
   font-family: "Lato", sans-serif;
   color: #193498;
 }
+
 footer .footer-device img {
   padding: 15px 8px 0px 8px;
   width: 64px;
   height: auto;
 }
+
 footer .footer-stream li {
   padding-top: 10px;
 }
+
 footer .footer-stream li a {
   text-decoration: none;
   color: #193498;
   text-align: center;
 }
+
 footer .footer-stream li a:hover {
   color: #ffc900;
 }
+
 footer .footer-contact .footer-title .footer-title-logo {
   width: 94px;
   height: auto;
 }
+
 footer .footer-contact .footer-title img {
   width: 64px;
   height: auto;
   padding-left: 4px;
   padding-right: 4px;
 }
+
 footer .footer-contact ul {
   padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 footer .footer-contact ul li {
   padding-left: 18px;
   padding-right: 18px;
@@ -249,8 +359,13 @@ footer .footer-contact ul li {
 
 @media screen and (max-width: 600px) {
   body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body button {
     display: block;
@@ -272,8 +387,13 @@ footer .footer-contact ul li {
   }
   body nav ul {
     padding-left: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   body nav ul img {
     height: 60px;
@@ -281,30 +401,42 @@ footer .footer-contact ul li {
     margin-top: -23px;
   }
   body nav ul li {
-    font-size: 22px;
     padding-left: 15px;
     padding-right: 5px;
     color: #bdbdd7;
   }
   body nav ul li a {
+    font-size: 22px;
     text-decoration: none;
-    color: #2666cf;
+    color: #ffc900;
   }
-
   .planet {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   footer {
     background-image: url(../img/loki-ConvertImage1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-clip: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */

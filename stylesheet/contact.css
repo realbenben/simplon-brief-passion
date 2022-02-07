@@ -25,6 +25,7 @@ h3 {
 body {
   text-align: center;
 }
+
 body p,
 body a,
 body label,
@@ -47,24 +48,33 @@ nav {
   margin-top: 0%;
   margin-bottom: 5%;
 }
+
 nav ul {
   padding-left: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 nav ul img {
   height: 60px;
   width: auto;
   margin-top: -23px;
 }
+
 nav ul li {
-  font-size: 32px;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 nav ul li a {
+  font-size: 32px;
   text-decoration: none;
-  color: #2666cf;
+  color: #ffc900;
 }
 
 footer {
@@ -73,47 +83,70 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-clip: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 footer img {
   width: 32px;
   height: auto;
 }
+
 footer h3 {
   font-family: "Lato", sans-serif;
   color: #193498;
 }
+
 footer .footer-device img {
   padding: 15px 3px 0px 3px;
   width: 64px;
   height: auto;
 }
+
 footer .footer-stream li {
   padding-top: 10px;
 }
+
 footer .footer-stream li a {
   text-decoration: none;
   color: #193498;
   text-align: center;
 }
+
 footer .footer-stream li a:hover {
   color: #ffc900;
 }
+
 footer .footer-contact .footer-title img {
   width: 64px;
   height: auto;
   padding-left: 4px;
   padding-right: 4px;
 }
+
 footer .footer-contact ul {
   padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 footer .footer-contact ul li {
   padding-left: 18px;
   padding-right: 18px;
@@ -130,11 +163,21 @@ body {
   min-height: 100vh;
   max-width: 720px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .wrap .half {
   width: 50%;
   padding: 32px 0;
@@ -160,6 +203,7 @@ body {
 .link {
   margin-top: 16px;
 }
+
 .link a {
   color: MediumSlateBlue;
 }
@@ -174,15 +218,18 @@ form {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 form div {
   width: 30%;
   margin: auto;
   padding-top: 5%;
 }
+
 form div label {
   text-align: center;
   margin-left: 25%;
 }
+
 form div input {
   width: 30%;
   width: 300px;
@@ -190,14 +237,17 @@ form div input {
   text-align: center;
   opacity: 70%;
 }
+
 form div textarea {
   opacity: 70%;
   height: 200px;
   width: 300px;
 }
+
 form div label {
   color: #2666cf;
 }
+
 form div button {
   border-radius: 50%;
   height: 100px;
@@ -213,8 +263,13 @@ form div button {
 
 @media screen and (max-width: 600px) {
   body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body button {
     display: block;
@@ -236,8 +291,13 @@ form div button {
   }
   body nav ul {
     padding-left: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   body nav ul img {
     height: 60px;
@@ -254,16 +314,24 @@ form div button {
     text-decoration: none;
     color: #2666cf;
   }
-
   footer {
     background-image: url(../img/loki-ConvertImage1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-clip: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-}/*# sourceMappingURL=contact.css.map */
+}
+/*# sourceMappingURL=contact.css.map */
