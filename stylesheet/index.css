@@ -150,11 +150,11 @@ main .index-title {
 main .index-game-content {
   background-image: url("../img/walpaperlight-ConvertImage.jpg");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: right;
 }
 main .index-game-content li {
-  text-align: left;
+  font-size: 22px;
+  text-align: 50% left;
   padding-bottom: 8px;
   padding-bottom: 8px;
 }
@@ -360,6 +360,9 @@ footer .footer-contact ul li {
     margin: auto;
     width: 350px;
     height: 300;
+  }
+  body .index-game-content {
+    background-position: center;
   }
 
   footer {
