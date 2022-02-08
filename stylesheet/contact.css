@@ -122,7 +122,7 @@ footer .footer-contact ul li {
 
 body {
   color: #fff;
-  background: #171f30;
+  background: linear-gradient(#082032, #334756, #2c3333, #3f0071);
   line-height: 150%;
 }
 
@@ -211,21 +211,10 @@ form div button {
   margin-top: -10%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   body {
     display: flex;
     flex-direction: column;
-  }
-  body button {
-    display: block;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    background-image: url("../img/ur_pin_large_front_square_600x600-removebg-preview-modified.png");
-    background-size: 130%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-origin: border-box;
   }
   body nav {
     background-color: white;
@@ -240,22 +229,94 @@ form div button {
     flex-direction: row;
   }
   body nav ul img {
+    display: none;
     height: 60px;
     width: auto;
     margin-top: -23px;
   }
   body nav ul li {
-    font-size: 22px;
     padding-left: 15px;
     padding-right: 5px;
     color: #bdbdd7;
   }
   body nav ul li a {
+    font-size: 22px;
     text-decoration: none;
-    color: #2666cf;
+    color: #ffc900;
   }
-
-  footer {
+  body main h1 {
+    letter-spacing: 5px;
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+  body main h2 {
+    font-size: 28px;
+  }
+  body main h3 {
+    font-size: 16px;
+  }
+  body main br {
+    margin-bottom: 16px;
+  }
+  body main form {
+    width: 350px;
+    height: auto;
+    padding-bottom: 10%;
+  }
+  body main form .contact-form {
+    width: 100%;
+    padding-right: 30%;
+    padding-top: 5%;
+  }
+  body main form .contact-form label {
+    text-align: left;
+    margin-left: 0%;
+  }
+  body main form .contact-form input {
+    width: 30%;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    opacity: 70%;
+  }
+  body main form .contact-form textarea {
+    opacity: 70%;
+    height: 200px;
+    width: 300px;
+  }
+  body main button {
+    margin-top: 5%;
+    margin-right: 25%;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-image: url("../img/ur_pin_large_front_square_600x600-removebg-preview-modified.png");
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+  }
+  body main .index-title {
+    padding-top: 10%;
+  }
+  body main iframe {
+    margin: auto;
+    width: 350px;
+    height: 300;
+  }
+  body main .wrap {
+    margin: 0;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  body main .wrap .half {
+    margin-right: 25%;
+  }
+  body main .wrap p {
+    margin-left: 35%;
+  }
+  body footer {
     background-image: url(../img/loki-ConvertImage1.png);
     background-size: cover;
     background-position: center;

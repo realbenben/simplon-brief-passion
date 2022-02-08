@@ -24,7 +24,7 @@ h3 {
     width: 300%;
   }
   to {
-    transform: scale(1.15);
+    // transform: scale(1.15);
     margin-left: 0%;
     width: 100%;
   }
@@ -82,6 +82,7 @@ nav {
 main {
   button {
     position: absolute;
+    -moz-right: 10%;
     right: 10%;
     margin-top: 2%;
     border-radius: 50%;
@@ -112,13 +113,9 @@ main {
         width: 300%;
       }
       to {
-        transform: scale(1.55);
+        // transform: scale(1.55);
         margin-right: 0%;
         width: 100%;
-        -webkit-transform: scale(1.55);
-        -moz-transform: scale(1.55);
-        -ms-transform: scale(1.55);
-        -o-transform: scale(1.55);
       }
     }
   }
@@ -229,6 +226,7 @@ footer {
     width: 32px;
     height: auto;
   }
+
   h3 {
     font-family: "Lato", sans-serif;
     color: #193498;
@@ -280,11 +278,37 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
+  main {
+    .planet {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin: auto;
+      margin-left: 5%;
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: rgba(0, 0, 0, 0.5);
+        // border-radius: 100%;
+      }
+    }
+  }
   body {
     display: flex;
     flex-direction: column;
     button {
+      margin-right: 30%;
       display: block;
       border-radius: 50%;
       height: 50px;
@@ -294,6 +318,9 @@ footer {
       background-position: center;
       background-repeat: no-repeat;
       background-origin: border-box;
+    }
+    .index-title {
+      padding-top: 10%;
     }
     nav {
       background-color: white;
@@ -306,6 +333,7 @@ footer {
         display: flex;
         flex-direction: row;
         img {
+          display: none;
           height: 60px;
           width: auto;
           margin-top: -23px;
@@ -322,11 +350,13 @@ footer {
         }
       }
     }
+    iframe {
+      margin: auto;
+      width: 350px;
+      height: 300;
+    }
   }
-  .planet {
-    display: flex;
-    flex-direction: column;
-  }
+
   footer {
     background-image: url(../img/loki-ConvertImage1.png);
     background-size: cover;
