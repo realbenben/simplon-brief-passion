@@ -23,7 +23,6 @@ h3 {
     width: 300%;
   }
   to {
-    transform: scale(1.15);
     margin-left: 0%;
     width: 100%;
   }
@@ -35,7 +34,6 @@ h3 {
     width: 300%;
   }
   to {
-    transform: scale(1.15);
     margin-left: 0%;
     width: 100%;
   }
@@ -122,13 +120,8 @@ main h3 {
     width: 300%;
   }
   to {
-    transform: scale(1.55);
     margin-right: 0%;
     width: 100%;
-    -webkit-transform: scale(1.55);
-    -moz-transform: scale(1.55);
-    -ms-transform: scale(1.55);
-    -o-transform: scale(1.55);
   }
 }
 @keyframes anim1 {
@@ -137,13 +130,8 @@ main h3 {
     width: 300%;
   }
   to {
-    transform: scale(1.55);
     margin-right: 0%;
     width: 100%;
-    -webkit-transform: scale(1.55);
-    -moz-transform: scale(1.55);
-    -ms-transform: scale(1.55);
-    -o-transform: scale(1.55);
   }
 }
 main .index-title {
@@ -291,12 +279,35 @@ footer .footer-contact ul li {
   scale: 2;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
+  main .planet {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20%;
+  }
+  main .planet .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 160px;
+    margin: auto;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
   body {
     display: flex;
     flex-direction: column;
   }
   body button {
+    margin-right: 30%;
     display: block;
     border-radius: 50%;
     height: 50px;
@@ -307,8 +318,11 @@ footer .footer-contact ul li {
     background-repeat: no-repeat;
     background-origin: border-box;
   }
+  body .index-title {
+    padding-top: 10%;
+  }
   body nav {
-    background-color: #bdbdd7;
+    background-color: white;
     padding-top: 5px;
     padding-bottom: 2px;
     margin-top: 0%;
@@ -320,6 +334,7 @@ footer .footer-contact ul li {
     flex-direction: row;
   }
   body nav ul img {
+    display: none;
     height: 60px;
     width: auto;
     margin-top: -23px;
@@ -334,7 +349,13 @@ footer .footer-contact ul li {
     text-decoration: none;
     color: #ffc900;
   }
-  body footer {
+  body iframe {
+    margin: auto;
+    width: 350px;
+    height: 300;
+  }
+
+  footer {
     background-image: url(../img/loki-ConvertImage1.png);
     background-size: cover;
     background-position: center;

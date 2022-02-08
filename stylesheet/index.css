@@ -51,6 +51,12 @@ body a {
   font-family: "Supermercado One", cursive;
   font-size: 22px;
 }
+body .index-gradient {
+  background: linear-gradient(#082032, #334756, #2c3333, #3f0071);
+}
+body .index-gradient h2 {
+  color: white;
+}
 
 nav {
   background-image: url("../img/slider/header.png");
@@ -287,8 +293,7 @@ footer .footer-contact ul li {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin: auto;
-    margin-left: 5%;
+    padding-right: 20%;
   }
   main .planet .overlay {
     position: absolute;
@@ -297,7 +302,7 @@ footer .footer-contact ul li {
     left: 0;
     right: 0;
     height: 100%;
-    width: 100%;
+    width: 160px;
     margin: auto;
     opacity: 0;
     transition: 0.5s ease;

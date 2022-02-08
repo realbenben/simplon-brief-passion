@@ -42,6 +42,12 @@ body {
     font-family: "Supermercado One", cursive;
     font-size: 22px;
   }
+  .index-gradient {
+    background: linear-gradient(#082032, #334756, #2c3333, #3f0071);
+    h2 {
+      color: white;
+    }
+  }
 }
 
 // LE HEADER //
@@ -161,6 +167,7 @@ main {
       }
     }
   }
+
   .planet {
     display: flex;
     flex-direction: row;
@@ -281,13 +288,14 @@ footer {
 @media screen and (max-width: 400px) {
   main {
     .planet {
+      // background: #2c3333;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
-      margin: auto;
-      margin-left: 5%;
+      padding-right: 20%;
+
       .overlay {
         position: absolute;
         top: 0;
@@ -295,7 +303,7 @@ footer {
         left: 0;
         right: 0;
         height: 100%;
-        width: 100%;
+        width: 160px;
         margin: auto;
         opacity: 0;
         transition: 0.5s ease;
